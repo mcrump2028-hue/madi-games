@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://8q8ldgnl3a2h"]
+
+[ext_resource type="PackedScene" uid="uid://xpvcq1r72jqw" path="res://player.tscn" id="1_urip1"]
+[ext_resource type="PackedScene" uid="uid://dn4e0u76a43qk" path="res://platform.tscn" id="2_vgd8o"]
+
+[node name="world" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_urip1")]
+position = Vector2(-857, 576)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_vgd8o")]
+modulate = Color(1, 0.58431375, 0.52156866, 1)
+position = Vector2(-152, 619)
+scale = Vector2(2.7834995, 0.39453366)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_vgd8o")]
+modulate = Color(1, 0.5803922, 0.45882353, 1)
+position = Vector2(132, 573)
+scale = Vector2(2.9433513, 0.43073487)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_vgd8o")]
+modulate = Color(1, 0.57254905, 0.6, 1)
+position = Vector2(438, 530)
+scale = Vector2(3.058178, 0.42381093)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_vgd8o")]
+modulate = Color(1, 0.6509804, 0.6313726, 1)
+position = Vector2(-418.00003, 663.00006)
+scale = Vector2(2.597093, 0.44891027)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_vgd8o")]
+modulate = Color(0.6313726, 0.49019608, 1, 1)
+position = Vector2(-1422, 798)
+scale = Vector2(18.405302, -2.056282)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(715, 527)
