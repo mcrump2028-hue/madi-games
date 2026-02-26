@@ -1,0 +1,112 @@
+[gd_scene load_steps=4 format=3 uid="uid://ckdvrob74v8ai"]
+
+[ext_resource type="PackedScene" uid="uid://xpvcq1r72jqw" path="res://scripts/player.tscn" id="1_urip1"]
+[ext_resource type="PackedScene" uid="uid://bl8vui11posbs" path="res://scenes/platform.tscn" id="2_vgd8o"]
+[ext_resource type="PackedScene" uid="uid://bv1u81jlypyff" path="res://scenes/sphere.tscn" id="3_wxttl"]
+
+[node name="world" type="Node2D"]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_urip1")]
+position = Vector2(-857, 576)
+
+[node name="StaticBody2D" parent="." instance=ExtResource("2_vgd8o")]
+modulate = Color(1, 0.58431375, 0.52156866, 1)
+position = Vector2(-152, 619)
+scale = Vector2(2.7834995, 0.39453366)
+
+[node name="StaticBody2D2" parent="." instance=ExtResource("2_vgd8o")]
+modulate = Color(1, 0.5803922, 0.45882353, 1)
+position = Vector2(132, 573)
+scale = Vector2(2.9433513, 0.43073487)
+
+[node name="StaticBody2D3" parent="." instance=ExtResource("2_vgd8o")]
+modulate = Color(1, 0.57254905, 0.6, 1)
+position = Vector2(438, 530)
+scale = Vector2(3.058178, 0.42381093)
+
+[node name="StaticBody2D4" parent="." instance=ExtResource("2_vgd8o")]
+modulate = Color(1, 0.6509804, 0.6313726, 1)
+position = Vector2(-418.00003, 663.00006)
+scale = Vector2(2.597093, 0.44891027)
+
+[node name="StaticBody2D5" parent="." instance=ExtResource("2_vgd8o")]
+modulate = Color(0.6313726, 0.49019608, 1, 1)
+position = Vector2(-1422, 798)
+scale = Vector2(18.405302, -2.056282)
+
+[node name="StaticBody2D6" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(885.00006, 538)
+scale = Vector2(1.8317182, 0.4237519)
+
+[node name="StaticBody2D7" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(1242, 539)
+scale = Vector2(1.6290058, 0.4196547)
+
+[node name="StaticBody2D8" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(1606, 538.00006)
+scale = Vector2(-1.6770943, 0.38237444)
+
+[node name="StaticBody2D9" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(2004, 537)
+scale = Vector2(-1.4376074, 0.39355212)
+
+[node name="StaticBody2D10" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(2328, 537)
+scale = Vector2(1.4026616, 0.4063842)
+
+[node name="StaticBody2D11" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(2719, 537)
+scale = Vector2(-1.5724003, 0.4255863)
+
+[node name="StaticBody2D12" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(3063, 536.99994)
+scale = Vector2(1.3478982, 0.40708244)
+
+[node name="StaticBody2D13" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(3245, 585.99994)
+scale = Vector2(2.1460445, -0.4715025)
+
+[node name="StaticBody2D14" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(3498, 645)
+scale = Vector2(2.6113906, -0.40013888)
+
+[node name="StaticBody2D15" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(3780.9998, 711.00006)
+scale = Vector2(2.64134, 0.5693016)
+
+[node name="StaticBody2D16" parent="." instance=ExtResource("2_vgd8o")]
+position = Vector2(4046.0002, 804.00006)
+scale = Vector2(2.195183, 0.44241765)
+
+[node name="StaticBody2D17" parent="." instance=ExtResource("3_wxttl")]
+position = Vector2(4486, 892)
+scale = Vector2(8.487329, 8.90906)
+
+[node name="StaticBody2D18" parent="." instance=ExtResource("3_wxttl")]
+position = Vector2(4770, 1003)
+scale = Vector2(9.118315, 9.609703)
+
+[node name="StaticBody2D19" parent="." instance=ExtResource("3_wxttl")]
+position = Vector2(5086, 913)
+scale = Vector2(8.781469, -9.501615)
+
+[node name="StaticBody2D20" parent="." instance=ExtResource("3_wxttl")]
+position = Vector2(5397, 1042.9999)
+scale = Vector2(-8.787696, 9.006028)
+
+[node name="StaticBody2D21" parent="." instance=ExtResource("3_wxttl")]
+position = Vector2(5710, 919.99994)
+scale = Vector2(8.500015, 9.506356)
+
+[node name="StaticBody2D22" parent="." instance=ExtResource("3_wxttl")]
+position = Vector2(6427, 1250.9999)
+scale = Vector2(38.756607, 3.3276849)
+
+[node name="StaticBody2D23" parent="." instance=ExtResource("3_wxttl")]
+position = Vector2(7450, 1252.0001)
+scale = Vector2(38.120453, 3.9084117)
+
+[node name="StaticBody2D24" parent="." instance=ExtResource("3_wxttl")]
+position = Vector2(8227, 1252)
+rotation = -0.027834892
+scale = Vector2(22.836979, -2.147242)
