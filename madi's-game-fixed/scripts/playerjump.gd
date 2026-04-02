@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 
 const SPEED = 130.0
-const JUMP_VELOCITY = -300.0
+const JUMP_VELOCITY = -400.0
 
 #Figure out how body is connected to the gravity with a node
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
