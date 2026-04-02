@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-
+var has_double_jump : bool = false
 const SPEED = 130.0
 const JUMP_VELOCITY = -400.0
 
@@ -12,10 +12,19 @@ func _physics_process(delta):
 	# Add the gravity
 	if not is_on_floor():
 		velocity.y += gravity * delta
-
+	if is_on_floor():
+			has_double_jump = true 
 # Handle Jump
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-				velocity.y = JUMP_VELOCITY
+	if Input.is_action_just_pressed("ui_accept"):
+		
+			
+		
+			if is_on_floor():
+				velocity.y=JUMP_VELOCITY
+			else:
+				if has_double_jump:
+					velocity.y = JUMP_VELOCITY
+					has_double_jump = false
 		
 	
 	
