@@ -1,7 +1,8 @@
-[gd_scene load_steps=9 format=3 uid="uid://cf2061b571r8u"]
+[gd_scene load_steps=10 format=3 uid="uid://cf2061b571r8u"]
 
 [ext_resource type="Texture2D" uid="uid://2a468y55mym4" path="res://assets/sprites/knight.png" id="1_4flbx"]
 [ext_resource type="Script" uid="uid://xf188liedt3j" path="res://scripts/playerjump.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://bt73lrdsy413m" path="res://assets/sprites/sprite 1.jpg" id="3_i3pqv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_onrkg"]
 atlas = ExtResource("1_4flbx")
@@ -62,3 +63,14 @@ shape = SubResource("CircleShape2D_1jxqw")
 zoom = Vector2(3, 3)
 position_smoothing_enabled = true
 rotation_smoothing_enabled = true
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+position = Vector2(2, -7)
+motion_scale = Vector2(0.5, 0.5)
+motion_mirroring = Vector2(1280, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
+texture = ExtResource("3_i3pqv")
+centered = false

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bswlxaodpj4ks"
-path="res://.godot/imported/minecraft background.webp-c5c0a47bfbb499b4ff6711f54a1cb250.ctex"
+uid="uid://bt73lrdsy413m"
+path="res://.godot/imported/sprite 1.jpg-398376b905a32546a7401ab9cf34c2f2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/sprites/minecraft background.webp"
-dest_files=["res://.godot/imported/minecraft background.webp-c5c0a47bfbb499b4ff6711f54a1cb250.ctex"]
+source_file="res://assets/sprites/sprite 1.jpg"
+dest_files=["res://.godot/imported/sprite 1.jpg-398376b905a32546a7401ab9cf34c2f2.ctex"]
 
 [params]
 

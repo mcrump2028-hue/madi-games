@@ -1,10 +1,9 @@
-[gd_scene load_steps=9 format=4 uid="uid://bix3oc5gv8b0k"]
+[gd_scene load_steps=8 format=4 uid="uid://bix3oc5gv8b0k"]
 
 [ext_resource type="PackedScene" uid="uid://cf2061b571r8u" path="res://player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://clm3yqxd3ufgb" path="res://assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="Script" uid="uid://dp66ri5ons46r" path="res://scenes/collision_shape_2d.gd" id="3_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://bl8vui11posbs" path="res://scenes/platform.tscn" id="4_lbhrr"]
-[ext_resource type="Texture2D" uid="uid://bswlxaodpj4ks" path="res://assets/sprites/minecraft background.webp" id="5_iywne"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -196,11 +195,5 @@ script = ExtResource("3_lnu2h")
 [node name="CollisionShape2D2" parent="Area2D" instance=ExtResource("4_lbhrr")]
 position = Vector2(3026, -110.999985)
 scale = Vector2(-23.185034, 2.6853335)
-
-[node name="Sprite2D" type="Sprite2D" parent="Area2D/CollisionShape2D2"]
-z_index = -100
-position = Vector2(109.2515, -13.778556)
-scale = Vector2(0.051496003, 0.25289837)
-texture = ExtResource("5_iywne")
 
 [connection signal="body_entered" from="Area2D" to="Area2D/CollisionShape2D" method="_on_area_2d_body_entered"]
